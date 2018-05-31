@@ -1,0 +1,26 @@
+#portfolio {
+    .wrapper {
+        position: relative;
+        h1 {
+            width: 70%;
+            border-bottom: 2px solid $darkShade;
+            position: absolute;
+            top: 8%;
+            left: -41%;
+            transform: rotate(-90deg);
+            font-size: calc(1rem + 3vw);
+            color: $accent;
+            text-shadow: 1px 1px $darkShade, 2px 2px $darkShade;
+        }
+    }
+    .portfolioContainer {
+        border: 1px solid blue;
+        figure {
+            display: flex;
+            flex-flow: row wrap;
+            img {
+                width: 40%;
+            }
+        }
+    }
+}

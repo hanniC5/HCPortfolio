@@ -1,13 +1,107 @@
 #about {
-    background: $accent;
+    background: $white;
     .wrapper {
+        padding: 5% 0;
         display: flex; 
+        justify-content: space-evenly;
+        position: relative;
+        .aboutTitle {
+            width: 70%;
+            border-bottom: 2px solid $darkShade;
+            position: absolute;
+            top: 8%;
+            left: -41%;
+            transform: rotate(-90deg);
+            font-size: calc(1rem + 3vw);
+            color: $accent;
+            text-shadow: 1px 1px $darkShade, 2px 2px $darkShade;
+        }
         .portrait {
             width: 40%;
             img {
                 width: 100%;
             }
         }
+        .content {
+            width: 55%;
+            color: $black;
+            h3 {
+                font-size: calc(1rem + 2.6vw);
+                margin: 10px 0;
+                line-height: 60px;
+                span {
+                    //display: inline-block;
+                    width: 100%;
+                    font-size: calc(1rem + 0.6vw);
+                }
+            }
+            p {
+                width: 80%;
+                font-size: calc(1rem + 0.5vw);
+            }
+            a {
+                margin-top: 30px;
+                padding: 10px 15px;
+                color: $darkShade;
+                background: $accent;
+                border-radius: 25px;
+                font-size: calc(1rem + 0.3vw);
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: $accent;
+                    background: $darkShade;
+                }
+            }
+        }
     }
 
+}
+
+.skills {
+    background: $accent;
+    .wrapper {
+        padding: 5% 0;
+        position: relative;
+        .skillsTitle {
+            margin-top: 0;
+            width: 70%;
+            float: right;
+            border-bottom: 2px solid $darkShade;
+            font-size: calc(1rem + 3vw);
+            text-align: right;
+            color: $white;
+            text-shadow: 1px 1px $darkShade, 2px 2px $darkShade;
+        }
+    }
+    .skillsContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        figure {
+            border-radius: 6px;
+            padding: 20px 0;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            color: $darkShade;
+            background: rgba(245,239,237,0.5);
+            transform: scale(0.8);
+            transition: all 0.5s ease;
+            .devicon-jquery-plain::before {
+                font-size: 7em;
+            }
+            figcaption {
+                font-size: calc(1rem + 0.5vw);
+            }
+            &:hover {
+                transform: scale(1);
+                background: $white;
+            }
+        }
+    }
 }

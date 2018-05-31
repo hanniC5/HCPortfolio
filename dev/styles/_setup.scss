@@ -6,6 +6,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 //VARIABLES AND MIX INS
 //typography variables:
+$betterFont: 'Poppins', sans-serif;
 $titleFont: 'Song Myung', serif;
 $mainFont: 'Lato', sans-serif;
 
@@ -27,6 +28,5 @@ body {
     width: 60%;
     max-width: 1152px;
     margin: 0 auto;
-    border: 1px solid pink;
 }
 
