@@ -51,6 +51,7 @@
             .desc {
                 width: 80%;
                 align-self: center;
+                position: relative;
                 h4 {
                     font-family: $mainFont;
                     font-size: calc(1rem + 1vw);
@@ -72,6 +73,28 @@
                         img {
                             width: 30px;
                         }
+                    }
+                }
+                .gitlink {
+                    position: absolute;
+                    right: 0;
+                    bottom: 15px;
+                    display: block;
+                    width: fit-content;
+                    width: -moz-fit-content;
+                    margin-top: 25px;
+                    padding: 10px;
+                    color: $black;
+                    background: transparent;
+                    border: 2px solid $black;
+                    border-radius: 5px;
+                    font-size: calc(1rem + 0.3vw);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-decoration: none;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        background: $accent;
                     }
                 }
             }
