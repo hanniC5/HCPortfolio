@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hannah Crump</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Song+Myung|Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Dancing+Script:700|Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
@@ -13,12 +13,17 @@
     <!-- HEADER SECTION BEGINS -->
     <header id="home">
         <div class="wrapper">
+            <button class="hamburger hamburger--squeeze" type="button" aria-label="Menu" aria-controls="navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul tabindex="0">
+                    <li><a tabindex="0" href="#home" >Home</a></li>
+                    <li><a tabindex="0" href="#about" >About</a></li>
+                    <li><a href="#portfolio" tabindex="0">Portfolio</a></li>
+                    <li><a href="#contact" tabindex="0">Contact</a></li>
                 </ul>
             </nav>
             <div class="title">
@@ -27,8 +32,8 @@
             </div>
             <div class="socialNav">
                 <ul>
-                    <li class="first">
-                        <p>Check me out! <i class="fas fa-long-arrow-alt-right"></i></p>
+                    <li>
+                        <a href="#"><i class="fas fa-home"></i></a>
                     </li>
                     <li>
                         <a href="https://twitter.com/HannahCrump5"><i class="fab fa-twitter"></i></a>
@@ -51,12 +56,14 @@
             <div class="wrapper">
                 <h1 class="aboutTitle">About Me</h1>
                 <div class="portrait">
-                    <img src="public/assets/2018-spring-hannah-crump-2.jpg" alt="headshot">
+                    <img src="public/assets/headshotBW.jpg" alt="headshot">
                 </div>
                 <div class="content clearfix">
-                    <h3>My name is Hannah <span>and I love to learn!</spa></h3>
-                    <p>The best part about developing is that I am continually finding new ways to solve problems. The innovations that make our lives convenient and efficient would not be possible without the collaborative nature of open-source code! I am excited to contribute to and learn from the community</p>
-                    <p>Outside of coding, I enjoy playing soccer and beach volleyball, cooking or baking, and crafting and altering clothes!</p>
+                    <h3>Hi, I'm Hannah</h3>
+                    <!-- <h4> and I am a Toronto-based developer!</h4> -->
+                    <p>My favourite thing about being a front end web developer is the openness and strength of the community. Everyday I learn at least
+                    one new thing from someone who has the taken time to openly share their work or their knowledge. As I continue to grow as a developer, I'm excited to contribute to and learn from such a collaborative community.</p> 
+                    <p>I also enjoy team sports, a good comedy show and getting out of the city to camp or cottage with friends!</p>
                     <a href="#contact">Get in touch</a>
                 </div>
             </div> <!-- wrapper ends -->
@@ -98,55 +105,183 @@
                         <i class="fab fa-github fa-7x"></i>
                         <figcaption>Github</figcaption>
                     </figure>
+                    <figure>
+                        <i class="fas fa-mobile-alt fa-7x"></i>
+                        <figcaption>Responsive Design</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="fas fa-universal-access fa-7x"></i>
+                        <figcaption>Accessible Design</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="devicon-visualstudio-plain"></i>
+                        <figcaption>Visual Studio Code</figcaption>
+                    </figure>
+                    <figure class="firebase">
+                        <img src="public/assets/firebaseIcon.svg" alt="Firebase icon">
+                        <figcaption>Firebase</figcaption>
+                    </figure>
                 </div>
             </div> <!-- wrapper ends -->
         </section>
+
         <!-- PORTFOLIO SECTION BEGINS -->
         <section id="portfolio">
             <div class="wrapper">
                 <h1>My portfolio</h1>
                 <div class="portfolioContainer">
-                    <figure>
-                        <img src="public/assets/nutella.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="public/assets/nutella.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="public/assets/nutella.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="public/assets/nutella.jpg" alt="">
-                    </figure>
+                    <div class="piece piece1">
+                        <h3>React, API & Firebase Web Application</h3>
+                        <div class="img">
+                            <img src="public/assets/Screen Shot 2018-06-02 at 3.02.17 PM.png" alt="Screen shot of Library Events app">
+                        </div>
+                        <div class="desc">
+                            <h4>Toronto Public Library Events App</h4>
+                            <p>This web application, built according to client specifications, uses React, React-Router, and Firebase to allow users to save Axios-requested TPL events to their own Google-Authorized database.</p>
+                            <ul class="tools">
+                                <li>
+                                    <i class="fab fa-js fa-3x"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-react fa-3x"></i>
+                                </li>
+                                <li>
+                                    <img src="public/assets/firebaseIcon.svg" alt="Firebase icon">
+                                </li>
+                                <li>
+                                    <i class="fas fa-mobile-alt fa-3x"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="piece piece2">
+                        <h3>React & Firebase Web Application</h3>
+                        <div class="img">
+                            <img src="public/assets/BBPLACEHOLDER.png" alt="screenshot of Budget Buddy app mainscreen">
+                        </div>
+                        <div class="desc">
+                            <h4>Budget Buddy</h4>
+                            <p>This application allows users to organize their total monthly budget by spending category and updates the remaining amount to keep that spening in check. Just login with your Google account to access your personal monthly budget plan!</p>
+                            <ul class="tools">
+                                <li> 
+                                    <i class="fas fa-mobile-alt fa-3x"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-react fa-3x"></i>
+                                    <!-- <p>React</p> -->
+                                </li>
+                                <li>
+                                    <i class="fab fa-js fa-3x"></i>
+                                    <!-- <p>JavaScript</p> -->
+                                </li>
+                                <li>
+                                    <img src="public/assets/firebaseIcon.svg" alt="Firebase icon">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="piece piece3">
+                        <h3>PSD to Webpage Conversion</h3>
+                        <div class="img">
+                            <img src="public/assets/simpleflexShot.png" alt="screenshot of PSD to site conversion">
+                        </div>
+                        <div class="desc">
+                            <h4>Simpleflex Agency PSD</h4>
+                            <p>Simpleflex is a single-page responsive website developed from a PSD design. The pixel-perfect design can be enjoyed on any screen size!</p>
+                            <ul class="tools">
+                                <li>
+                                    <i class="fab fa-html5 fa-3x"></i>
+                                    <!-- <p>HTML</p> -->
+                                </li>
+                                <li>
+                                    <i class="fab fa-css3-alt fa-3x"></i>
+                                    <!-- <p>CSS</p> -->
+                                </li>
+                                <li>
+                                    <i class="fab fa-sass fa-3x"></i>
+                                    <!-- <p>Sass</p> -->
+                                </li>
+                                <li>
+                                    <i class="fas fa-mobile-alt fa-3x"></i>
+                                    <!-- <p>Responsive Design</p> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div> <!-- wrapper ends -->
         </section>
         <!-- CONTACT SECTION BEGINS -->
         <section id="contact">
-            <div class="wrapper"></div> <!-- wrapper ends -->
+            <div class="wrapper clearfix">
+                <h1>Contact Info</h1>
+                <h4>Send me a question, tip or say hello!</h4>
+                <div class="lowerContact">
+                    <form action="http://www.focuspocus.io/magic/e679f3ebbccda9a4f166b37d35788ff4" method="POST">
+                        <div class="group">
+                            <input id="name" type="text" name="name" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label for="name"><i class="fas fa-user"></i> Name</label>
+                        </div>
+                        <div class="group">
+                            <input id="email" type="email" name="email" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        </div>
+                        <div class="group">
+                            <input id="subject" type="text" name="subject" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label for="subject"><i class="fas fa-sticky-note"></i> Subject</label>
+                        </div>
+                       <div class="group">
+                            <textarea required name="message" id="message" cols="30" rows="5"></textarea>
+                            <label for="message"><i class="fas fa-comment-alt"></i> Message</label>
+                       </div>
+                        <label for="submit" class="visuallyhidden">Submit Form</label>
+                        <input id="submit" type="submit" value="Send My Message">
+                    </form>
+                    <div class="contactInfo">
+                        <div class="email">
+                            <p><i class="far fa-envelope"></i> ADDRESS:</p>
+                            <p>hello@<span class="visuallyhidden"> FOO</span>hannahcrump.ca</p>
+                        </div>
+                        <div class="location">
+                            <p><i class="fas fa-map-marker-alt"></i> LOCATION:</p>
+                            <p>Toronto, ON</p>
+                        </div>
+                    </div>
+                </div> <!-- lower content container ends -->
+            </div> <!-- wrapper ends -->
         </section>
     </main> 
     <!-- MAIN SECTION ENDS -->
     <!-- FOOTER BEGINS -->
     <footer>
         <div class="wrapper">
-            <p>Hannah Crump &copy; 2018</p>
+            <div class="courtesy">
+                <p>Coded by Hannah Crump &copy;2018  |  Inspired by Folify Design on Themeforest  |  Background Photo Courtesy of Kieran Darcy, <span><a href="www.kierandarcy.com">www.kierandarcy.com</a></span>  |  Headshot Courtesy of Pam Lau, <span><a href="www.pamlau.com">www.pamlau.com</a></span></p>
+            </div>
+
             <nav class="socialIcon">
                 <ul>
                     <li>
-                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
                     </li>
                     <li>
-                        <a href=""><i class="fab fa-github"></i></a>
+                        <a href=""><i class="fab fa-github fa-2x"></i></a>
                     </li>
                     <li>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
                     </li>
                 </ul>
             </nav>
         </div> <!-- wrapper ends -->
     </footer>
     <!-- FOOTER ENDS -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
     <script src="public/scripts/site.js"></script>
 </body>

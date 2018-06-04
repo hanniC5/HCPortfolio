@@ -1,0 +1,33 @@
+footer {
+    background: linear-gradient(to bottom right, $accent, $lightShade);
+    padding: 1px;
+    font-family: $mainFont;
+    color: $black;
+    .courtesy {
+        width: 100%;
+        font-size: calc(1rem + 0.5vw);
+        text-align: center;
+        a {
+            color: $darkShade;
+        }
+    }
+    nav {
+        margin: 0 auto;
+        ul {
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 5px;
+                a {
+                    padding: 10px;
+                    color: $darkShade;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }  
+    }
+}

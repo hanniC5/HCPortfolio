@@ -1,5 +1,7 @@
 #portfolio {
+    background: #fff;
     .wrapper {
+        padding: 5% 0;
         position: relative;
         h1 {
             width: 70%;
@@ -10,17 +12,73 @@
             transform: rotate(-90deg);
             font-size: calc(1rem + 3vw);
             color: $accent;
-            text-shadow: 1px 1px $darkShade, 2px 2px $darkShade;
         }
     }
     .portfolioContainer {
-        border: 1px solid blue;
-        figure {
+        font-family: $betterFont;
+        .piece {
+            //border: 2px solid gold;
+            width: 100%;
+            margin: 10px auto;
             display: flex;
-            flex-flow: row wrap;
-            img {
-                width: 40%;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+            h3 {
+                width: 90%;
+                margin: 0 auto;
+                color: $black;
+                font-size: calc(1rem + 1.4vw);
+                border-bottom: 2px solid $darkShade;
+                text-align: right;
             }
+            .img {
+                width: 80%;
+                margin: 0 auto;
+                height: fit-content;
+                margin: 10px auto;
+                border: 5px solid darken($lightShade,10%);
+                box-shadow: 2px 2px 5px $darkShade;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    filter: grayscale(100%);
+                    &:hover {
+                        filter: none;
+                    }
+                }
+            }
+            .desc {
+                width: 80%;
+                align-self: center;
+                h4 {
+                    font-family: $mainFont;
+                    font-size: calc(1rem + 1vw);
+                    margin: 5px 0;
+                }
+                p {
+                    margin: 0;
+                    font-family: $mainFont;
+                    font-size: calc(1rem + 0.6vw);
+                }
+                ul {
+                    padding: 0;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-start;
+                    li {
+                        list-style-type: none;
+                        margin: 5px;
+                        img {
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .piece1 {
+            //text-align: right;
         }
     }
 }
