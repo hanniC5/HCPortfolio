@@ -101,16 +101,32 @@ header {
 } //header styles end
 
 //HEADER MEDIA QUERIES
-@media (max-width: 800px) {
+@media (max-width: 1220px) {
     header {
-        height: 75vh;
-        .title {
-            margin: 10vh auto;
-        }
         .socialNav {
-            right: 1%;
-            top: 25%;
+            right: 9%;
         }
     }
-
+}
+@media (max-width: 980px) {
+    header {
+        .socialNav {
+            right: 1%;
+        }
+    }
+}
+@media (max-width: 480px) {
+    header {
+        .socialNav {
+            top: 60%;
+            border-left: none;
+            ul {
+                li {
+                    a {
+                        font-size: calc(1rem + 1.2vw);
+                    }
+                }
+            }
+        }
+    }
 }

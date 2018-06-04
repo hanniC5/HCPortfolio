@@ -1,5 +1,5 @@
 #portfolio {
-    background: #fff;
+    background: linear-gradient(to bottom, $lightShade, $accent);
     .wrapper {
         padding: 5% 0;
         position: relative;
@@ -37,7 +37,7 @@
                 margin: 0 auto;
                 height: fit-content;
                 margin: 10px auto;
-                border: 5px solid darken($lightShade,10%);
+                //border: 5px solid darken($lightShade,10%);
                 box-shadow: 2px 2px 5px $darkShade;
                 img {
                     width: 100%;
@@ -76,9 +76,6 @@
                     }
                 }
             }
-        }
-        .piece1 {
-            //text-align: right;
         }
     }
 }

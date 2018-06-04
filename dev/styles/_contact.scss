@@ -151,15 +151,19 @@
             transform: translate(-50%);
         }
     }
-    .thanks {
-        //border: 1px solid red;
-        position: absolute;
-        bottom: 10%;
-        right: 5%;
-        transform: rotate(-10deg);
-        p {
-            font-size: calc(1rem + 2vw);
-            font-family: $signatureFont;
+    @media (max-width: 830px) {
+        .wrapper {
+            justify-content: center;
+        }
+        .lowerContact {
+            flex-direction: column;
+            justify-content: center;
+            form {
+                width: 90%;
+            }
+            .contactInfo {
+                display: none;
+            }
         }
     }
 }
