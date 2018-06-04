@@ -9,10 +9,10 @@ header {
         position: relative;
         padding: 2% 0;
     }
-    .hide {
+    .hamburger {
         display: none;
     }
-    nav {
+    .homeNav {
         position: absolute;
         top: 0;
         right: 0;
@@ -34,7 +34,6 @@ header {
                     transform: scale(1);
                     transition: all 0.5s linear;
                     &:hover {
-                        //transform: scale(2);
                         color: $darkShade;
                     }
                     &::after {
@@ -72,7 +71,7 @@ header {
     .socialNav {
         position: fixed;
         top: 50%;
-        right: 15%;
+        right: 13%;
         border-left: 2px solid darken($darkShade, 20%);
         ul {
             height: 200px;
@@ -97,7 +96,6 @@ header {
             }
         }
     }
-    
 } //header styles end
 
 //HEADER MEDIA QUERIES
@@ -117,8 +115,48 @@ header {
 }
 @media (max-width: 480px) {
     header {
+        .title {
+            margin: 30vh auto;
+        }
+        .homeNav {
+            left: 0;
+        }
+        // .hamburger {
+        //     display: block;
+        //     padding: 10px 0px;
+        //     position: fixed;
+        //     z-index: 10;
+        // }
+        // .homeNav {
+        //     background: $darkShade;
+        //     position: fixed;
+        //     top: 12%;
+        //     left: -300px;
+        //     right: 500px;
+        //     z-index: 9;
+        //     ul {
+        //         flex-direction: column;
+        //         li {
+        //             a {
+        //                 color: $white;
+        //                 &::after {
+        //                     border-bottom: 2px solid $white;
+        //                 }
+        //                 &:hover {
+        //                     color: $white;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        // .display {
+        //     top: 12%;
+        //     left: 100px;
+        //     right: 100px;
+        //     //bottom: 0;
+        // }
         .socialNav {
-            top: 60%;
+            top: 50%;
             border-left: none;
             ul {
                 li {

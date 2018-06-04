@@ -11,23 +11,4 @@ footer {
             color: $darkShade;
         }
     }
-    nav {
-        margin: 0 auto;
-        ul {
-            padding: 0;
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            li {
-                margin: 5px;
-                a {
-                    padding: 10px;
-                    color: $darkShade;
-                    &:hover {
-                        color: $accent;
-                    }
-                }
-            }
-        }  
-    }
 }

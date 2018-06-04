@@ -29,6 +29,19 @@ body {
 h1, h2, h3 {
     font-family: $betterFont;
 }
+.skipLink {
+    color: $black;
+    background: $white;
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    font-size: calc(1rem + 1vw);
+    &:focus {
+        left: 0;
+    }
+}
+
 div img {
     width: 100%;
     height: 100%;

@@ -1,5 +1,5 @@
 #portfolio {
-    background: linear-gradient(to bottom, $lightShade, $accent);
+    background: #fff;
     .wrapper {
         padding: 5% 0;
         position: relative;
@@ -17,20 +17,19 @@
     .portfolioContainer {
         font-family: $betterFont;
         .piece {
-            //border: 2px solid gold;
             width: 100%;
-            margin: 10px auto;
+            margin: 25px auto;
             display: flex;
             flex-flow: column wrap;
             justify-content: flex-start;
             align-items: flex-end;
             h3 {
-                width: 90%;
-                margin: 0 auto;
+                width: 80%;
+                margin: 20px auto;
                 color: $black;
                 font-size: calc(1rem + 1.4vw);
-                border-bottom: 2px solid $darkShade;
-                text-align: right;
+                text-align: left;
+                border-bottom: 2px solid $accent;
             }
             .img {
                 width: 80%;

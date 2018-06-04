@@ -1,15 +1,23 @@
-const sScroll = function () {
+const sScroll = function() {
     console.log('this is from site.js');
     $('a').smoothScroll({
-        speed: 600
+        speed: 500
+    });
+}
+const displayHamNav = function() {
+    $('button.hamburger.hamburger--squeeze').on('click', () => {
+        $('button.hamburger').toggleClass('is-active');
+        $('nav.homeNav').toggleClass('display');
+    });
+    $('a.homeLink').on('click', () => {
+        $('button.hamburger').removeClass('is-active');
+        $('nav.homeNav').removeClass('display');
     });
 }
 
 $(function() {
     sScroll();
-    $('.title').fadeIn('slow');
-    $('button.hamburger').on('click', () => {
-        console.log('button clicked');
-        $(this).toggleClass('is-active');
-    });
+    $('div.title').fadeIn('slow');
+    displayHamNav();
+    
 });

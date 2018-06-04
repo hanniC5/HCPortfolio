@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
+    <a href="#about" class="skipLink">Skip to Main Content</a>
     <!-- HEADER SECTION BEGINS -->
     <header id="home">
         <div class="wrapper">
@@ -18,12 +19,12 @@
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            <nav>
-                <ul tabindex="0">
-                    <li><a tabindex="0" href="#home" >Home</a></li>
-                    <li><a tabindex="0" href="#about" >About</a></li>
-                    <li><a href="#portfolio" tabindex="0">Portfolio</a></li>
-                    <li><a href="#contact" tabindex="0">Contact</a></li>
+            <nav class="homeNav">
+                <ul>
+                    <li><a href="#home" class="homeLink" >Home</a></li>
+                    <li><a href="#about" class="homeLink">About</a></li>
+                    <li><a href="#portfolio" class="homeLink">Portfolio</a></li>
+                    <li><a href="#contact" class="homeLink">Contact</a></li>
                 </ul>
             </nav>
             <div class="title">
@@ -36,13 +37,13 @@
                         <a href="#"><i class="fas fa-home"></i></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/HannahCrump5"><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/HannahCrump5" target="_blank"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="https://github.com/hanniC5"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/hanniC5" target="_blank"><i class="fab fa-github"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/hannah-crump-3b4344162/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/hannah-crump-3b4344162/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </li>
                 </ul>
             </div>
@@ -215,6 +216,16 @@
             <div class="wrapper clearfix">
                 <h1>Contact Info</h1>
                 <h4>Send me a question, tip or say hello!</h4>
+                <div class="contactInfo">
+                    <div class="email">
+                        <p><i class="far fa-envelope"></i> ADDRESS:</p>
+                        <p>hello@<span class="visuallyhidden"> FOO</span>hannahcrump.ca</p>
+                    </div>
+                    <div class="location">
+                        <p><i class="fas fa-map-marker-alt"></i> LOCATION:</p>
+                        <p>Toronto, ON</p>
+                    </div>
+                </div>
                 <div class="lowerContact">
                     <form action="http://www.focuspocus.io/magic/e679f3ebbccda9a4f166b37d35788ff4" method="POST">
                         <div class="group">
@@ -242,16 +253,6 @@
                         <label for="submit" class="visuallyhidden">Submit Form</label>
                         <input id="submit" type="submit" value="Send My Message">
                     </form>
-                    <div class="contactInfo">
-                        <div class="email">
-                            <p><i class="far fa-envelope"></i> ADDRESS:</p>
-                            <p>hello@<span class="visuallyhidden"> FOO</span>hannahcrump.ca</p>
-                        </div>
-                        <div class="location">
-                            <p><i class="fas fa-map-marker-alt"></i> LOCATION:</p>
-                            <p>Toronto, ON</p>
-                        </div>
-                    </div>
                 </div> <!-- lower content container ends -->
             </div> <!-- wrapper ends -->
         </section>
@@ -263,20 +264,6 @@
             <div class="courtesy">
                 <p>Coded by Hannah Crump &copy;2018  |  Inspired by Folify Design on Themeforest  |  Background Photo Courtesy of Kieran Darcy, <span><a href="www.kierandarcy.com">www.kierandarcy.com</a></span>  |  Headshot Courtesy of Pam Lau, <span><a href="www.pamlau.com">www.pamlau.com</a></span></p>
             </div>
-
-            <nav class="socialIcon">
-                <ul>
-                    <li>
-                        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fab fa-github fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
-                    </li>
-                </ul>
-            </nav>
         </div> <!-- wrapper ends -->
     </footer>
     <!-- FOOTER ENDS -->
