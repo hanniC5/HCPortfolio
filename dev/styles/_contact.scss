@@ -154,8 +154,23 @@
             form {
                 width: 90%;
             }
-            .contactInfo {
-                display: none;
+        }
+    }
+    @media (max-width: 670px) {
+        h1 {
+            align-self: center;
+        }
+        .contactInfo {
+            flex-direction: column;
+            align-items: center;
+            .email, .location {
+                padding: 0 10px;
+                p {
+                    margin: 0 5px;
+                }
+            }
+            .email {
+                border-right: 2px solid transparent;
             }
         }
     }

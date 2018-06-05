@@ -19,7 +19,6 @@
     "gulp-sass": "^4.0.1"
   },
   "dependencies": {
-    "hamburgers": "^0.9.3",
     "jquery-smooth-scroll": "^2.2.0"
   }
 }

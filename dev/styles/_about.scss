@@ -108,8 +108,9 @@
         width: 100%;
         margin: 25px 0;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        //grid-template-rows: repeat(2, 1fr);
+        display: -ms-grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-rows: 100px;
         grid-gap: 10px;
         figure {
             padding: 25px 0;
@@ -117,9 +118,13 @@
             flex-flow: column nowrap;
             align-items: center;
             color: $black;
+            svg {
+                width: 50px;
+                height: 50px;
+            }
             .devicon-jquery-plain::before, 
             .devicon-visualstudio-plain::before {
-                font-size: 7em;
+                font-size: 5em;
             }
             figcaption {
                 font-size: calc(1rem + 0.5vw);
@@ -138,6 +143,11 @@
             .skillsTitle {
                 float: left;
             }
+        }
+    }
+    @media (max-width: 590px) {
+        .skillsContainer {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }
